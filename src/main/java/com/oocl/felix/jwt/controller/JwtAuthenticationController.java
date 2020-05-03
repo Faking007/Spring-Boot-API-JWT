@@ -4,10 +4,11 @@ import com.oocl.felix.jwt.http.JwtRequest;
 import com.oocl.felix.jwt.service.JwtAuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin
 public class JwtAuthenticationController {
 
     @Autowired
